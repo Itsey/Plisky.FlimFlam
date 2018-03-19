@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4C20E3B-79CB-466B-A304-5C41526F75D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OldFlimflam</RootNamespace>
+    <AssemblyName>OldFlimflam</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName />
+    <SccLocalPath />
+    <SccAuxPath />
+    <SccProvider />
+    <ApplicationIcon>Mex.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+    <StartupObject>MexInternals.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/Mex/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;MEXBUILD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>ToolsetMEDIUM.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS;MEXBUILD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>ToolsetMEDIUM.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>ToolsetLOW.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>Migrated rules for Mex.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>    
+    <Compile Include="Common\AnEvidenceClass.cs" />
+    <Compile Include="Common\AssertionPopulationData.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\ErrorDialogData.cs" />
+    <Compile Include="Common\InternalUtil.cs" />
+    <Compile Include="Common\MessageParts.cs" />
+    <Compile Include="Common\MessageStructure.cs" />
+    <Compile Include="Common\Settings.cs" />
+    <Compile Include="CoreFunctionality\CacheSupportManager.cs" />
+    <Compile Include="CoreFunctionality\ComparerClasses.cs" />
+    <Compile Include="CoreFunctionality\Consts.cs" />
+    <Compile Include="CoreFunctionality\DataStructureManager.cs" />
+    <Compile Include="CoreFunctionality\IncomingMessageManager.cs" />
+    <Compile Include="CoreFunctionality\MexCore.cs" />
+    <Compile Include="CoreFunctionality\MexDiagnosticManager.cs" />
+    <Compile Include="CoreFunctionality\MexOptions.cs" />
+    <Compile Include="CoreFunctionality\NewJob.cs" />
+    <Compile Include="CoreFunctionality\PrimaryWorkManager.cs" />
+    <Compile Include="CoreFunctionality\ProcessSummary.cs" />
+    <Compile Include="CoreFunctionality\ViewSupportManager.cs" />
+    <Compile Include="DataStructures\ActiveFindStructure.cs" />
+    <Compile Include="DataStructures\AdditionalData.cs" />
+    <Compile Include="DataStructures\EventEntriesList.cs" />
+    <Compile Include="DataStructures\EventEntryStructures.cs" />
+    <Compile Include="DataStructures\HighlightRequests.cs" />
+    <Compile Include="DataStructures\HighlightRequestStore.cs" />
+    <Compile Include="DataStructures\IncomingEventStore.cs" />
+    <Compile Include="DataStructures\LooksLikeAnException.cs" />
+    <Compile Include="DataStructures\NonTracedApplicationStructure.cs" />
+    <Compile Include="DataStructures\ResourceCountEntryRepresentation.cs" />
+    <Compile Include="DataStructures\ResourceTrackingInstance.cs" />
+    <Compile Include="DataStructures\ResourceViewStructures.cs" />
+    <Compile Include="DataStructures\SupportingMessageDataStructures.cs" />
+    <Compile Include="DataStructures\SupportingViewClasses.cs" />
+    <Compile Include="DataStructures\TracedApplication.cs" />
+    <Compile Include="DataStructures\TracedApplicationArrayList.cs" />
+    <Compile Include="DataStructures\ViewFilter.cs" />
+    <Compile Include="DataStructures\ViewSpecificData.cs" />
+    <Compile Include="frmMexMainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMexMainView.Designer.cs">
+      <DependentUpon>frmMexMainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Importers\ODSDataGathererThread.cs" />
+    <Compile Include="Importers\ODSWin32Interface.cs" />
+    <Compile Include="Importers\SavedFileGathererThread.cs" />
+    <Compile Include="Importers\TCPSocketRecieve.cs" />
+    <Compile Include="Integration\IRecieveEventsToCompare.cs" />
+    <Compile Include="Jobs\BaseJobAndIRAJob.cs" />
+    <Compile Include="Jobs\CoreJobImplementations.cs" />
+    <Compile Include="Jobs\ImporterRelatedJobs.cs" />
+    <Compile Include="Jobs\NotificationJobs.cs" />
+    <Compile Include="Jobs\PurgeRelatedJobs.cs" />
+    <Compile Include="Jobs\SaveDataJob.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMexMainView.resx">
+      <DependentUpon>frmMexMainView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MexResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MexResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmCreateDuplicate.resx">
+      <DependentUpon>frmCreateDuplicate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmDiagnosticsScreen.resx">
+      <DependentUpon>frmDiagnosticsScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmExceptionDetails.resx">
+      <DependentUpon>frmExceptionDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmExtendedDetails.resx">
+      <DependentUpon>frmExtendedDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmFindDialog.resx">
+      <DependentUpon>frmFindDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmHighlighting.resx">
+      <DependentUpon>frmHighlighting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmMainExtendedDetails.resx">
+      <DependentUpon>frmMainExtendedDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmMexUserMessages.resx">
+      <DependentUpon>frmMexUserMessages.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmOpenDialog.resx">
+      <DependentUpon>frmOpenDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmOptionsScreen.resx">
+      <DependentUpon>frmOptionsScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmProcViewFilter.resx">
+      <DependentUpon>frmProcViewFilter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmQuickView.resx">
+      <DependentUpon>frmQuickView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmSaveOptions.resx">
+      <DependentUpon>frmSaveOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmTimingsAdditionalScreen.resx">
+      <DependentUpon>frmTimingsAdditionalScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmViewInAWindow.resx">
+      <DependentUpon>frmViewInAWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Resources\MexResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MexResources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Screens\frmCreateDuplicate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmCreateDuplicate.Designer.cs">
+      <DependentUpon>frmCreateDuplicate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmDiagnosticsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmExceptionDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmExceptionDetails.Designer.cs">
+      <DependentUpon>frmExceptionDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmExtendedDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmFindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmHighlighting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmMainExtendedDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmMexUserMessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmMexUserMessages.Designer.cs">
+      <DependentUpon>frmMexUserMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmOpenDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmOpenDialog.Designer.cs">
+      <DependentUpon>frmOpenDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmOptionsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmProcViewFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmQuickView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmSaveOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmSaveOptions.Designer.cs">
+      <DependentUpon>frmSaveOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmTimingsAdditionalScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmTimingsAdditionalScreen.Designer.cs">
+      <DependentUpon>frmTimingsAdditionalScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmViewInAWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmViewInAWindow.Designer.cs">
+      <DependentUpon>frmViewInAWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\AppHelpProvider.cs" />
+    <Compile Include="Utility\IResourceAccess.cs" />
+    <Compile Include="Utility\NameValuePair.cs" />
+    <Compile Include="Utility\ResourceAccessor.cs" />
+    <Compile Include="Utility\ThreadNameRepresentation.cs" />
+    <Compile Include="Utility\UIHelperRoutines.cs" />
+    <Compile Include="ViewerStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="Mex.ico" />
+    <Content Include="Resources\autoscroll.ico" />
+    <Content Include="Resources\noautoscroll.ico" />
+    <Content Include="Resources\norefresh.ico" />
+    <Content Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PliskyUIControls\PliskyUIControls.csproj">
+      <Project>{903EF514-80E9-49C2-9C99-B386804EA722}</Project>
+      <Name>PliskyUIControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Support\Support.csproj">
+      <Project>{1d9a9b02-a9e9-4b37-aa2d-e342e4f78362}</Project>
+      <Name>Support</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

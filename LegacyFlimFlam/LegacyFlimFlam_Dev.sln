@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Dependencies", "_Dependencies\_Dependencies.csproj", "{6A505E98-EAE9-44A1-9B62-D30617367DC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0DAE51FC-F82A-4F54-BE1B-70BE32447DE9}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		PliskyLibrary.vsmdi = PliskyLibrary.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OldFlimflam", "OldFlimFlam\OldFlimflam.csproj", "{A4C20E3B-79CB-466B-A304-5C41526F75D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Support", "Support\Support.csproj", "{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PliskyUIControls", "PliskyUIControls\PliskyUIControls.csproj", "{903EF514-80E9-49C2-9C99-B386804EA722}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LegacyLibrary", "LegacyLibrary", "{CC9C7077-AA8C-49A6-9B4F-6383451ABF2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FlimFlam", "FlimFlam", "{B3EE617E-8964-4152-B838-AAC114C4AE2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Develop|Any CPU = Develop|Any CPU
+		Develop|x86 = Develop|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Debug|x86.Build.0 = Debug|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Develop|Any CPU.ActiveCfg = Develop|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Develop|x86.ActiveCfg = Develop|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Develop|x86.Build.0 = Develop|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Release|x86.ActiveCfg = Release|Any CPU
+		{6A505E98-EAE9-44A1-9B62-D30617367DC0}.Release|x86.Build.0 = Release|Any CPU
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Debug|x86.ActiveCfg = Debug|x86
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Debug|x86.Build.0 = Debug|x86
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Develop|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Develop|Any CPU.Build.0 = Debug|Any CPU
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Develop|x86.ActiveCfg = Debug|x86
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Develop|x86.Build.0 = Debug|x86
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Release|x86.ActiveCfg = Release|x86
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8}.Release|x86.Build.0 = Release|x86
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Debug|x86.Build.0 = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Develop|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Develop|Any CPU.Build.0 = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Develop|x86.ActiveCfg = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Develop|x86.Build.0 = Debug|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362}.Release|x86.Build.0 = Release|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Debug|x86.Build.0 = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Develop|Any CPU.ActiveCfg = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Develop|Any CPU.Build.0 = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Develop|x86.ActiveCfg = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Develop|x86.Build.0 = Debug|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Release|x86.ActiveCfg = Release|Any CPU
+		{903EF514-80E9-49C2-9C99-B386804EA722}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4C20E3B-79CB-466B-A304-5C41526F75D8} = {B3EE617E-8964-4152-B838-AAC114C4AE2B}
+		{1D9A9B02-A9E9-4B37-AA2D-E342E4F78362} = {B3EE617E-8964-4152-B838-AAC114C4AE2B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9888A3EF-0EAC-487F-A71E-03D3B6EFEF80}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PliskyLibrary.vsmdi
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal
