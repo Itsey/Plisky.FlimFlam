@@ -149,7 +149,7 @@ namespace Plisky.Plumbing {
         /// </summary>
         // todo: make sure it only supports known tex types in between ##
         // TODO: This is a buggy regex, it matches too well - even non numeric PIDs are matched and they shouldnt be.
-        public const string IS_VALID_TEXTSTRING_REGEX = @"\{\[[0-9A-Za-z\._]{0,}\]\[[0-9]{1,}\]\[[0-9]{1,}\]\[[0-9A-Za-z\._\:\\]{0,}\]\[[0-9A-Za-z\._\\\:]{0,}\]\[[0-9]{0,8}\]\[[0-9A-Za-z\.\:_<>`]{0,}\]\}\#[A-Z]{3,3}\#";
+        public const string IS_VALID_TEXTSTRING_REGEX = @"\{\[[0-9A-Za-z\._]{0,}\]\[[0-9]{1,}\]\[[0-9]{1,}\]\[[0-9A-Za-z\._\:\\]{0,}\]\[[0-9A-Za-z\._\-\\:]{0,}\]\[[0-9]{0,8}\]\[[0-9A-Za-z\.\:_<>`]{0,}\]\}\#[A-Z]{3,3}\#";
             //  >> PRE FILE PATH FIX  @"\{\[[0-9A-Za-z\._]{0,}\]\[[0-9]{1,}\]\[[0-9]{1,}\]\[[0-9A-Za-z\._:]{0,}\]\[[0-9A-Za-z\._]{0,}\]\[[0-9]{0,8}\]\[[0-9A-Za-z\.\:_<>`]{0,}\]\}\#[A-Z]{3,3}\#";
 
         private static Regex s_cachedTexRegex;

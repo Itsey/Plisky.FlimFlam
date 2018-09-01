@@ -44,8 +44,8 @@ namespace MexInternals {
             spbtSelectThreads.ContextMenuStrip.Items.Add(new ToolStripMenuItem("Invert Selection", null, tsThreadViewHandler_Click));
 
             Core = MexCore.TheCore;
-            
-            // TODO VERY STRANGE >> this.ViewerStatus = new MRawEntryParserChain.csexStatus();
+
+            this.ViewerStatus = new MexStatus(); // MRawEntryParserChain.csexStatus();
             AppImages = this.imgsMexIcons;
             RefreshQuickIcons();
         }
